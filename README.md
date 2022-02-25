@@ -1,4 +1,4 @@
 # ELECTRICA
 
-ELEctronic ool for
+ELEctronic tool for
 Clinicians, Teachers and Researchers In Child Abuse
