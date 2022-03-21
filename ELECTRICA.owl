@@ -7,7 +7,8 @@
 @base <http://purl.obolibrary.org/obo/electrica.owl> .
 
 <http://purl.obolibrary.org/obo/electrica.owl> rdf:type owl:Ontology ;
-                                                owl:imports <http://purl.obolibrary.org/obo/electrica.owl/NLMVS-imports> .
+                                                owl:imports <http://purl.obolibrary.org/obo/electrica.owl/NLMVS-imports> ,
+                                                            <http://www.semanticweb.org/ontologies/2022/2/untitled-ontology-122> .
 
 #################################################################
 #    Annotation properties
