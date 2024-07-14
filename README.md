@@ -12,7 +12,7 @@ Welcome to the ELECTRICA Ontology GitHub repository! This repository contains th
 - [Contact](#contact)
 
 ### Overview
-The ELECTRICA ontology describes concepts from reports of cases of child abuse or suspected child abuse, with a focus on fractures identified from radiological investigations, the characteristics of those fractures, and the family and medical history of the patients. At the time of writing, the ontology includes 1141 classes and 62 properties. 
+The ELECTRICA ontology describes concepts from reports of cases of child abuse or suspected child abuse, with a focus on fractures identified from radiological investigations, the characteristics of those fractures, and the family and medical history of the patients. At the time of writing, the ontology includes 1141 classes and 63 properties. 
 
 ### Installation
 To use the ELECTRICA ontology, you can clone this repository to your local machine using the following command:
