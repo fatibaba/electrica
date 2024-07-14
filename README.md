@@ -6,6 +6,7 @@ Welcome to the ELECTRICA Ontology GitHub repository! This repository contains th
 - [Overview](#overview)
 - [Usage](#usage)
 - [Ontology Structure](#ontology-structure)
+- [Evaluation](#evaluation)
 - [Contact](#contact)
 
 ### Overview
@@ -43,6 +44,9 @@ The ELECTRICA ontology is intricately structured to cover various aspects of cas
 We use the Basic Formal Ontology (BFO) as the upper-level ontology to provide a structured foundation. This choice facilitates the integration of concepts from the Ontology for General Medical Science (OGMS). We also reused classes from SNOMED-CT and are currently working towards better integration with SNOMED-CT. By leveraging these established ontologies, ELECTRICA ensures a robust and interoperable framework, enhancing its utility for clinical data analysis.
 
 For an in-depth look at the ontology structure, refer to the ontology file `electrica.owl` within this repository.
+
+### Evaluation
+The evaluation phase of the ELECTRICA ontology involved multiple methods to ensure its accuracy, consistency, and completeness. We engaged in an iterative process with domain experts to refine the ontology based on their feedback. To validate the ontology against the competency questions identified during the specification phase, we added datasets and mapped them to the ontology classes, then ran SPARQL queries on the annotated dataset. We also used the OntOlogy Pitfall Scanner! (OOPS!) to identify potential modelling pitfalls and Pellet and HermiT reasoners to check for logical issues. The results of this evaluation is detailed in the evaluation folder along with the competency questions, SPARQL queries and small sample dataset.
 
 ### Contact
 For further information or queries, please reach out to the project maintainers:
