@@ -6,7 +6,7 @@ We present the competency questions in the table below along with the expected r
 
 | Competency Question  | Expected Answer |
 | --- | --- |
-| CQ1. What is the specific location of a fracture in a child? | Location of the fracture (e.g., left femur, right temporal bone) |
+| CQ1. What is the specific location of a fracture in a child? | Location of the fracture (e.g., Fracture of the left femur, Fracture of the anterior arch of c1) |
 | CQ2. What is the type of a given fracture? | Type of fracture (e.g., buckle, greenstick, transverse) |
 | CQ3. What is the age of the fracture as determined by radiological analysis? | Age of the fracture (e.g., 0-2 weeks, 2-4 weeks) |
 | CQ4. What are the characteristics of the fracture healing process? | Healing characteristics (e.g., lamellar bridging bone of hard callus) |
