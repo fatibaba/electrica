@@ -31,12 +31,25 @@ The ELECTRICA ontology can also be accessed via BioPortal at [ELECTRICA on BioPo
 3. Explore detailed information about each concept, including definitions, synonyms, and mappings to other ontologies.
 4. Utilise visualisation tools to see the relationships between different concepts.
 
+### Ontology Structure
+The ELECTRICA ontology is intricately structured to cover various aspects of cases that record suspicion of inflicted injury, with a particular focus on paediatric fractures. The core classes cover the following areas:
+
+* Detailed classifications of fractures based on location and type.
+* Comprehensive documentation of fracture characteristics.
+* Integration of radiological findings and healing characteristics.
+* Aspects of how paediatric fractures are identified and recorded.
+* Other variables like the family and medical history of the patient.
+
+We use the Basic Formal Ontology (BFO) as the upper-level ontology to provide a structured foundation. This choice facilitates the integration of concepts from the Ontology for General Medical Science (OGMS). We also reused classes from SNOMED-CT and are currently working towards better integration with SNOMED-CT. By leveraging these established ontologies, ELECTRICA ensures a robust and interoperable framework, enhancing its utility for clinical data analysis.
+
+For an in-depth look at the ontology structure, refer to the ontology file `electrica.owl` within this repository.
+
 ### Contact
 For further information or queries, please reach out to the project maintainers:
 
-* Lead Maintainer: Dr Fatima Maikore 
-* Domain Expert: Professor Amaka Offiah
+* Lead Maintainer: [Dr Fatima Maikore](https://www.sheffield.ac.uk/cs/people/academic/fatima-maikore) 
+* Domain Expert: [Professor Amaka Offiah](https://www.sheffield.ac.uk/smph/people/clinical-medicine/amaka-offiah)
 
-Issues and suggestions can be submitted via the repository's Issues section.
+Issues and suggestions can be submitted via the repository's [Issues section](https://github.com/fatibaba/electrica/issues).
 
 
