@@ -45,16 +45,19 @@ WHERE {
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT DISTINCT ?fractureType
+SELECT DISTINCT ?fractureTypeLabel
 WHERE {
-  ?fracture ?hasFractureCharacteristic ?fractureType.
-  ?hasFractureCharacteristic rdfs:label "hasFractureCharacteristic"
+  ?fractureInstance ?hasFractureCharacteristic ?InstancefractureXtics.
+  ?hasFractureCharacteristic rdfs:label "hasFractureCharacteristic".
+  ?InstancefractureXtics rdf:type ?fractureType.
+  ?fractureType rdsf:label ?fractureTypeLabel.
 }
 ```
 **Answer:**
 
-| "fractureType" |
+| "fractureTypeLabel" |
 | --- |
 | "buckle fracture (torus fracture)" |
 | "Greenstick fracture" |
@@ -64,11 +67,14 @@ WHERE {
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT DISTINCT ?fractureAge
 WHERE {
-  ?fracture ?showsRadiologicalDating ?fractureAge.
+  ?fractureInstance ?showsRadiologicalDating ?radiologicalDatingInstance.
   ?showsRadiologicalDating rdfs:label "showsRadiologicalDating".
+  ?radiologicalDatingInstance rdf:type ?radiologicalDating.
+  ?radiologicalDating rdfs:label ?fractureAge.
 }
 ```
 **Answer:**
@@ -82,16 +88,19 @@ WHERE {
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT DISTINCT ?healingCharacteristic
+SELECT DISTINCT ?healingCharacteristicLabel
 WHERE {
-  ?fracture ?showsHealingCharacteristics ?healingCharacteristic.
+  ?fractureInstance ?showsHealingCharacteristics ?healingCharacteristicInstance.
   ?showsHealingCharacteristics rdfs:label "showsHealingCharacteristic".
+  ?healingCharacteristicInstance rdf:type ?healingCharacteristic.
+  ?healingCharacteristic rdfs:label ?healingCharacteristicLabel.
 }
 ```
 **Answer:**
 
-| "healingCharacteristic" |
+| "healingCharacteristicLabel" |
 | --- |
 | "Lamellar bridging bone of hard callus" |
 | "Subperiosteal new bone formation" |
@@ -101,46 +110,49 @@ WHERE {
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?compatibility
+SELECT ?fractureInstance ?compatibility
 WHERE {
-  ?fracture ?compatibleWithHistory ?compatibility.
+  ?fractureInstance ?compatibleWithHistory ?compatibility.
   ?compatibleWithHistory rdfs:label "fractureCompatibleWithHistory".
 }
 ```
 **Answer:**
 
-| "compatibility" |
-| --- |
-| "True" |
-| "False" |
+| "fractureInstance" | "compatibility"|
+| --- | --- |
+| "fracture001" | "True" |
+| "fracture002" | "False" |
 
 6. **Is the family known to social services?**
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?familyHistoryWithSocialServices
+SELECT ?caseID ?familyHistoryWithSocialServices
 WHERE {
-  ?patient ?familyKnownToSocialServices ?familyHistoryWithSocialServices.
+  ?caseID ?familyKnownToSocialServices ?familyHistoryWithSocialServices.
   ?familyKnownToSocialServices rdfs:label "familyKnownToSocialServices".
 }
 ```
 **Answer:**
 
-| "familyHistoryWithSocialServices" |
-| --- |
-| "True" |
-| "False" |
+| "caseID" | "familyHistoryWithSocialServices" |
+| --- | --- |
+| "RCUC598883" | "True" |
+| "RCUC637282" | "False" |
 
 7. **What pre-existing medical conditions does the patient have?**
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT DISTINCT ?medicalCondition
 WHERE {
-  ?patient ?hasPreExistingCondition ?medicalCondition.
+  ?patientInstance ?hasPreExistingCondition ?medicalConditionInstance.
   ?hasPreExistingCondition rdfs:label "hasPreExistingCondition".
+  ?medicalConditionInstance rdf:type ?disorder.
+  ?disorder rdfs:label ?medicalCondition.
 }
 ```
 **Answer:**
@@ -153,16 +165,19 @@ WHERE {
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?investigationOutcome
+SELECT ?investigationOutcomeLabel
 WHERE {
-  ?case ?hasInvestigationOutcome ?investigationOutcome.
+  ?caseID ?hasInvestigationOutcome ?investigationOutcomeInstance.
   ?hasInvestigationOutcome rdfs:label "hasOutcomeOfInvestigation".
+  ?investigationOutcomeInstance rdf:type ?investigationOutcome.
+  ?investigationOutcome rdfs:label ??investigationOutcomeLabel
 }
 ```
 **Answer:**
 
-| "investigationOutcome" |
+| "investigationOutcomeLabel" |
 | --- |
 | "Accidental injury" |
 | "Inflicted injury" |
