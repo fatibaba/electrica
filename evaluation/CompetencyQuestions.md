@@ -2,7 +2,7 @@
 
 We designed a set of competency questions to ensure that the ELECTRICA ontology covers all the concepts needed to describe fractures, their characteristics, and associated patient and family history. These concepts model the data elements of the knowledge base that contains data on paediatric fractures and suspected child abuse cases. This evaluation aims to check that the necessary data elements required by the ELECTRICA ontology are adequately represented.
 
-We present the competency questions in the table below along with the expected responses:
+We present the competency questions in the table below along with the meaning and expected responses:
 
 | Competency Question  | Definition of question |
 | --- | --- |
