@@ -4,16 +4,16 @@ We designed a set of competency questions to ensure that the ELECTRICA ontology 
 
 We present the competency questions in the table below along with the expected responses:
 
-| Competency Question  | Expected Answer |
+| Competency Question  | Definition of question |
 | --- | --- |
-| CQ1. What is the specific location of a fracture in a child? | Location of the fracture (e.g., Fracture of the left femur, Fracture of the anterior arch of c1) |
-| CQ2. What is the characteristic of a given fracture? | Type of fracture (e.g., buckle fracture (torus fracture), greenstick fracture) |
-| CQ3. What is the age of the fracture as determined by radiological analysis? | Age of the fracture (e.g., 0-2 weeks, 2-4 weeks) |
-| CQ4. What are the characteristics of the fracture healing process? | Healing characteristics (e.g., lamellar bridging bone of hard callus) |
-| CQ5. Is a given fracture compatible with the reported history of injury? | Boolean value (True/False) |
-| CQ6. Is the family known to social services? | Boolean value (True/False) |
-| CQ7. What pre-existing medical conditions does the patient have? | Pre-existing conditions (e.g., osteogenesis imperfecta) |
-| CQ8. What is the outcome of investigation for a given case? | Outcome of investigation (e.g., accidental injury, inflicted injury) |
+| CQ1. What is the specific location of a fracture in a child? | This question aims to identify the specific anatomical location where the fracture has occurred, such as the left femur, right temporal bone, or left parietal bone. |
+| CQ2. What is the characteristic of a given fracture? | This question seeks to classify the fracture type, such as buckle fracture, greenstick fracture, or transverse fracture, based on its characteristics |
+| CQ3. What is the age of the fracture as determined by radiological analysis? | This question determines the estimated age of the fracture based on radiological findings, categorizing it into time frames like 0-2 weeks, 2-4 weeks |
+| CQ4. What are the characteristics of the fracture healing process? | This question looks at the specific features observed during the fracture healing process, such as lamellar bridging bone of hard callus or subperiosteal new bone formation. |
+| CQ5. Is a given fracture compatible with the reported history of injury? | This question assesses whether the characteristics of the fracture align with the history provided by the patient or caregiver, indicated by a Boolean value (true or false). |
+| CQ6. Is the family known to social services? | This question identifies whether the family has prior involvement with social services, which could be relevant in cases of suspected inflicted injury. |
+| CQ7. What pre-existing medical conditions does the patient have? | This question seeks to document any pre-existing medical conditions that might affect the patient's susceptibility to fractures, such as osteogenesis imperfecta. |
+| CQ8. What is the outcome of investigation for a given case? | This question determines the result of the investigation into the injury, categorizing it as accidental injury, inflicted injury, or undetermined. |
 
 As an example dataset for this evaluation, we obtained data from several paediatric radiology reports. We collected the data using Survey Monkey, then used a Python script to convert it into RDF format and annotated it with the ontology classes. Due to the sensitive nature of the data, it is not publicly available. However, if you require access or have any inquiries, please contact the maintainers or submit an issue on GitHub as needed. We used a local installation of Apache Jena Fuseki server to run the SPARQL queries. Instructions on how to install and use the Apache Jena Fuseki server can be found [here](https://jena.apache.org/documentation/fuseki2/). The SPARQL queries we designed to represent the competency questions and some sample results we obtained by running the queries are presented below. Initial iterations identified missing concepts which were added subsequently, and redundant or overly complex concepts were simplified.
 
