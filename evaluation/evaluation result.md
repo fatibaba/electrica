@@ -1,4 +1,4 @@
-### Results of Ontology Evaluation
+### Summary of Results of Ontology Evaluation
 
 The comprehensive evaluation of the ELECTRICA ontology yielded positive results, affirming its accuracy, consistency, and completeness. The iterative feedback process with domain experts proved invaluable, leading to significant refinements in the ontology. The experts' insights ensured that the ontology accurately captured the nuances of pediatric fractures and the associated clinical and investigative details.
 
