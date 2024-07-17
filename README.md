@@ -22,7 +22,7 @@ git clone https://github.com/fatibaba/electrica.git
 You will need [Protégé](https://protege.stanford.edu) to view and modify the ontology files.
 
 1. Open Protégé.
-2. Load the electrica.owl file from the cloned repository.
+2. Load the ELECTRICA.owl file from the cloned repository.
 
 #### Access via BioPortal
 The ELECTRICA ontology can also be accessed via BioPortal at [ELECTRICA on BioPortal](https://bioportal.bioontology.org/ontologies/ELECTRICA). BioPortal provides built-in functionalities to view and explore the concepts within the ontology. Users can:
